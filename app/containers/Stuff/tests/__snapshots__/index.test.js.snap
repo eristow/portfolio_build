@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stuff /> Should render and match the snapshot 1`] = `
+<div>
+  <h1>
+    Other Stuff
+  </h1>
+  <button
+    class="Button-cbu1yy-0 ksdeT"
+    color="#03dac6"
+    type="button"
+  >
+    Stock App
+  </button>
+</div>
+`;
