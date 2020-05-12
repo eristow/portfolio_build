@@ -34,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
     opacity: 87%;
   }
 
+  h2 {
+    color: white;
+    opacity: 87%;
+  }
+
   ul {
     color: white;
     opacity: 87%;

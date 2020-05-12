@@ -13,7 +13,7 @@ const Button = styled.button.attrs(props => ({
 }))`
   color: ${props => props.color};
   border: 2px solid ${props => props.color};
-  background: #ffffff00;
+  background: #202020;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   font-size: 18px;

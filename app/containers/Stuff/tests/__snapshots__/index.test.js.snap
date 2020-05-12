@@ -5,12 +5,23 @@ exports[`<Stuff /> Should render and match the snapshot 1`] = `
   <h1>
     Other Stuff
   </h1>
-  <button
-    class="Button-cbu1yy-0 ksdeT"
-    color="#03dac6"
-    type="button"
+  <div
+    class="Stuff__ButtonContainer-qb2d2j-0 kEHErN"
   >
-    Stock App
-  </button>
+    <button
+      class="Button-cbu1yy-0 izjhvx"
+      color="#03dac6"
+      type="button"
+    >
+      Stock App
+    </button>
+    <button
+      class="Button-cbu1yy-0 izjhvx"
+      color="#03dac6"
+      type="button"
+    >
+      Radio
+    </button>
+  </div>
 </div>
 `;
