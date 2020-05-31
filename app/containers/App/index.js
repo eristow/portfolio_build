@@ -13,9 +13,9 @@ import styled from 'styled-components';
 
 import Header from 'components/Header';
 import HomePage from 'containers/HomePage/Loadable';
-import Resume from 'containers/Resume/Loadable';
-import Stuff from 'containers/Stuff/Loadable';
-import Links from 'containers/Links/Loadable';
+// import Resume from 'containers/Resume/Loadable';
+import Work from 'containers/Work/Loadable';
+// import Links from 'containers/Links/Loadable';
 import Stocks from 'containers/Stocks/Loadable';
 import Radio from 'containers/Radio/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
@@ -37,9 +37,9 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/stuff" component={Stuff} />
-        <Route exact path="/links" component={Links} />
+        {/* <Route exact path="/resume" component={Resume} /> */}
+        <Route exact path="/work" component={Work} />
+        {/* <Route exact path="/links" component={Links} /> */}
         <Route exact path="/stocks" component={Stocks} />
         <Route exact path="/radio" component={Radio} />
         <Route component={NotFoundPage} />

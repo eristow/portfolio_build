@@ -1,9 +1,3 @@
-/**
- *
- * Stuff
- *
- */
-
 import React, { useState } from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -18,21 +12,32 @@ const ButtonContainer = styled.div`
   flex-direction: row;
 `;
 
-export function Stuff() {
+export function Work() {
   const [goToStock, setGoToStock] = useState(false);
   const [goToRadio, setGoToRadio] = useState(false);
 
   return (
     <div>
-      <h1>Other Stuff</h1>
+      <h1>My Work</h1>
       {goToStock ? <Redirect to="stocks" /> : <></>}
       {goToRadio ? <Redirect to="radio" /> : <></>}
       <ButtonContainer>
-        <Button
-          type="button"
-          margin="10px 10px"
-          onClick={() => setGoToStock(true)}
-        >
+        <Button type="button">
+          <a href="https://web-daw-frontend.herokuapp.com/">Web DAW Project</a>
+        </Button>
+        <Button type="button" margin="10px 10px">
+          <a href="https://github.com/eristow/web-daw">
+            Web DAW Front-End Code
+          </a>
+        </Button>
+        <Button type="button" margin="10px 10px">
+          <a href="https://github.com/eristow/web-daw-backend">
+            Web DAW Back-End Code
+          </a>
+        </Button>
+      </ButtonContainer>
+      <ButtonContainer>
+        <Button type="button" onClick={() => setGoToStock(true)}>
           Stock App
         </Button>
         <Button
@@ -40,14 +45,14 @@ export function Stuff() {
           margin="10px 10px"
           onClick={() => setGoToRadio(true)}
         >
-          Radio
+          Radio (WIP)
         </Button>
       </ButtonContainer>
     </div>
   );
 }
 
-Stuff.propTypes = {
+Work.propTypes = {
   // dispatch: PropTypes.func.isRequired,
 };
 
@@ -62,4 +67,4 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-export default compose(withConnect)(Stuff);
+export default compose(withConnect)(Work);
