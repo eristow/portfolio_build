@@ -1,15 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Stuff /> Should render and match the snapshot 1`] = `
+exports[`<Work /> Should render and match the snapshot 1`] = `
 <div>
   <h1>
-    Other Stuff
+    My Work
   </h1>
   <div
-    class="Stuff__ButtonContainer-qb2d2j-0 kEHErN"
+    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
   >
     <button
+      class="Button-cbu1yy-0 gJgWfK"
+      color="#03dac6"
+      type="button"
+    >
+      <a
+        href="https://web-daw-frontend.herokuapp.com/"
+      >
+        Web DAW Project
+      </a>
+    </button>
+    <button
       class="Button-cbu1yy-0 izjhvx"
+      color="#03dac6"
+      type="button"
+    >
+      <a
+        href="https://github.com/eristow/web-daw"
+      >
+        Web DAW Front-End Code
+      </a>
+    </button>
+    <button
+      class="Button-cbu1yy-0 izjhvx"
+      color="#03dac6"
+      type="button"
+    >
+      <a
+        href="https://github.com/eristow/web-daw-backend"
+      >
+        Web DAW Back-End Code
+      </a>
+    </button>
+  </div>
+  <div
+    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
+  >
+    <button
+      class="Button-cbu1yy-0 gJgWfK"
       color="#03dac6"
       type="button"
     >
@@ -20,7 +57,7 @@ exports[`<Stuff /> Should render and match the snapshot 1`] = `
       color="#03dac6"
       type="button"
     >
-      Radio
+      Radio (WIP)
     </button>
   </div>
 </div>
