@@ -10,7 +10,12 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 
 export function TicTacToe() {
-  return <div />;
+  return (
+    <div>
+      <h1>TicTacToe Page</h1>
+      <p>test</p>
+    </div>
+  );
 }
 
 TicTacToe.propTypes = {

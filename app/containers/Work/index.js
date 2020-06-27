@@ -15,12 +15,14 @@ const ButtonContainer = styled.div`
 export function Work() {
   const [goToStock, setGoToStock] = useState(false);
   const [goToRadio, setGoToRadio] = useState(false);
+  const [goToTicTacToe, setGoToTicTacToe] = useState(false);
 
   return (
     <div>
       <h1>My Work</h1>
       {goToStock ? <Redirect to="stocks" /> : <></>}
       {goToRadio ? <Redirect to="radio" /> : <></>}
+      {goToTicTacToe ? <Redirect to="tictactoe" /> : <></>}
       <ButtonContainer>
         <Button type="button">
           <a href="https://web-daw-frontend.herokuapp.com/">Web DAW Project</a>
@@ -46,6 +48,13 @@ export function Work() {
           onClick={() => setGoToRadio(true)}
         >
           Radio (WIP)
+        </Button>
+        <Button
+          type="button"
+          margin="10px 10px"
+          onClick={() => setGoToTicTacToe(true)}
+        >
+          TicTacToe (WIP)
         </Button>
       </ButtonContainer>
     </div>

@@ -59,6 +59,13 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
     >
       Radio (WIP)
     </button>
+    <button
+      class="Button-cbu1yy-0 izjhvx"
+      color="#03dac6"
+      type="button"
+    >
+      TicTacToe (WIP)
+    </button>
   </div>
 </div>
 `;
