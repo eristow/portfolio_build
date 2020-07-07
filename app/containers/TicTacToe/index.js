@@ -8,12 +8,13 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import './index.css';
+import Game from './Game';
 
 export function TicTacToe() {
   return (
     <div>
-      <h1>TicTacToe Page</h1>
-      <p>test</p>
+      <Game />
     </div>
   );
 }
