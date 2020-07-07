@@ -12,17 +12,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
     <Route
       component={[Function]}
       exact={true}
-      path="/resume"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/stuff"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/links"
+      path="/work"
     />
     <Route
       component={[Function]}
@@ -33,6 +23,11 @@ exports[`<App /> should render and match the snapshot 1`] = `
       component={[Function]}
       exact={true}
       path="/radio"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/tictactoe"
     />
     <Route
       component={[Function]}

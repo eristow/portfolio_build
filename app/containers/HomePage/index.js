@@ -6,21 +6,32 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
+
+import Button from 'components/Button';
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 export default function HomePage() {
   return (
     <div>
-      <h1>Welcome to my webpage!</h1>
-      <p>My name is Evan Ristow, and this is my website.</p>
-      <p>
-        This will be the home to links to other profiles, my resume, and
-        anything else I feel like adding.
-      </p>
-      <p>
-        Last Edit: 23 April 2020
-        <br />
-        Established: 20 April 2018 by Evan Ristow.
-      </p>
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
+      <h1>Evan Ristow's Portfolio</h1>
+      <ButtonContainer>
+        <Button type="button">
+          <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
+            LinkedIn
+          </a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://drive.google.com/file/d/1wZxKA1I1gF5xgExKVLuoM8_FpWyKPtHy/view?usp=sharing">
+            Resume
+          </a>
+        </Button>
+      </ButtonContainer>
     </div>
   );
 }

@@ -3,10 +3,12 @@
 exports[`<Resume /> Should render and match the snapshot 1`] = `
 <div>
   <h1>
-    My Resume!
+    My Resume
   </h1>
-  <p>
-    My resume will be here.
-  </p>
+  <a
+    href="https://drive.google.com/file/d/1wZxKA1I1gF5xgExKVLuoM8_FpWyKPtHy/view?usp=sharing"
+  >
+    Resume
+  </a>
 </div>
 `;

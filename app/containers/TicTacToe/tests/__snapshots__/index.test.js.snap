@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TicTacToe /> Should render and match the snapshot 1`] = `
+<div>
+  <h1>
+    React Tic Tac Toe - With Hooks
+  </h1>
+  <div
+    class="board"
+  >
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+    <button
+      class="squares"
+      type="button"
+    />
+  </div>
+  <div
+    class="info-wrapper"
+  >
+    <div>
+      <h3>
+        History
+      </h3>
+      <li>
+        <button
+          type="button"
+        >
+          Go to Start
+        </button>
+      </li>
+    </div>
+    <h3>
+      Next Player: X
+    </h3>
+  </div>
+</div>
+`;
