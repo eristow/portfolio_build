@@ -12,14 +12,14 @@ import { compose } from 'redux';
 export function Links() {
   return (
     <div>
-      <h1>Links Page</h1>
+      <h1>Links</h1>
       <ul className="links">
         <li>
           <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
             LinkedIn
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://soundcloud.com/duosyncrasy">SoundCloud</a>
         </li>
         <li>
@@ -29,7 +29,7 @@ export function Links() {
           <a href="https://www.youtube.com/channel/UC4jepeFzPS98d-JQQrjsHfA">
             YouTube
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

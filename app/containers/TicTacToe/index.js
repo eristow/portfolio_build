@@ -1,6 +1,6 @@
 /**
  *
- * Resume
+ * TicTacToe
  *
  */
 
@@ -8,19 +8,18 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import './index.css';
+import Game from './Game';
 
-export function Resume() {
+export function TicTacToe() {
   return (
     <div>
-      <h1>My Resume</h1>
-      <a href="https://drive.google.com/file/d/1wZxKA1I1gF5xgExKVLuoM8_FpWyKPtHy/view?usp=sharing">
-        Resume
-      </a>
+      <Game />
     </div>
   );
 }
 
-Resume.propTypes = {
+TicTacToe.propTypes = {
   // dispatch: PropTypes.func.isRequired,
 };
 
@@ -35,4 +34,4 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-export default compose(withConnect)(Resume);
+export default compose(withConnect)(TicTacToe);

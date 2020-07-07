@@ -17,9 +17,9 @@ function Header() {
   return (
     <NavBar>
       <HeaderLink to="/">Home</HeaderLink>
-      <HeaderLink to="/resume">Resume</HeaderLink>
-      <HeaderLink to="/stuff">Stuff</HeaderLink>
-      <HeaderLink to="/links">Links</HeaderLink>
+      {/* <HeaderLink to="/resume">Resume</HeaderLink> */}
+      <HeaderLink to="/work">Work</HeaderLink>
+      {/* <HeaderLink to="/links">Links</HeaderLink> */}
     </NavBar>
   );
 }
