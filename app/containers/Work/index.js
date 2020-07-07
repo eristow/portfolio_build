@@ -14,14 +14,14 @@ const ButtonContainer = styled.div`
 
 export function Work() {
   const [goToStock, setGoToStock] = useState(false);
-  const [goToRadio, setGoToRadio] = useState(false);
+  // const [goToRadio, setGoToRadio] = useState(false);
   const [goToTicTacToe, setGoToTicTacToe] = useState(false);
 
   return (
     <div>
       <h1>My Work</h1>
       {goToStock ? <Redirect to="stocks" /> : <></>}
-      {goToRadio ? <Redirect to="radio" /> : <></>}
+      {/* {goToRadio ? <Redirect to="radio" /> : <></>} */}
       {goToTicTacToe ? <Redirect to="tictactoe" /> : <></>}
       <ButtonContainer>
         <Button type="button">
@@ -42,19 +42,19 @@ export function Work() {
         <Button type="button" onClick={() => setGoToStock(true)}>
           Stock App
         </Button>
-        <Button
+        {/* <Button
           type="button"
           margin="10px 10px"
           onClick={() => setGoToRadio(true)}
         >
           Radio (WIP)
-        </Button>
+        </Button> */}
         <Button
           type="button"
           margin="10px 10px"
           onClick={() => setGoToTicTacToe(true)}
         >
-          TicTacToe (WIP)
+          TicTacToe
         </Button>
       </ButtonContainer>
     </div>
