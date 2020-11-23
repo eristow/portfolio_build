@@ -1,31 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Stocks /> Should render and match the snapshot 1`] = `
-<div>
-  <h1>
-    Stock Calculator
-  </h1>
-  <div>
-    <p>
-      Stock 
-      1
-       New Stop Price: 
-      0
-    </p>
-    <input
-      value="0"
-    />
-  </div>
-  <div>
-    <p>
-      Stock 
-      2
-       New Stop Price: 
-      0
-    </p>
-    <input
-      value="0"
-    />
-  </div>
-</div>
+<h1>
+  Stock Calculator
+</h1>
 `;

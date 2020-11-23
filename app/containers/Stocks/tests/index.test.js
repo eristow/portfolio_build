@@ -8,22 +8,45 @@
 
 import React from 'react';
 import { render } from 'react-testing-library';
+import { Provider } from 'react-redux';
+import configureStore from 'configureStore';
 // import 'jest-dom/extend-expect'; // add some helpful assertions
 
-import { Stocks } from '../index';
+import Stocks, { compute } from '../index';
 
 describe('<Stocks />', () => {
+  let store;
+
+  beforeAll(() => {
+    store = configureStore();
+  });
+
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
     const dispatch = jest.fn();
-    render(<Stocks dispatch={dispatch} />);
+    render(
+      <Provider store={store}>
+        <Stocks dispatch={dispatch} />
+      </Provider>,
+    );
     expect(spy).not.toHaveBeenCalled();
   });
 
   it('Should render and match the snapshot', () => {
     const {
       container: { firstChild },
-    } = render(<Stocks />);
+    } = render(
+      <Provider store={store}>
+        <Stocks />
+      </Provider>,
+    );
     expect(firstChild).toMatchSnapshot();
+  });
+
+  it('compute() should return the correct value', () => {
+    const testNum = 79.87;
+    const expectedVal = 67.89;
+
+    expect(compute(testNum)).toBe(expectedVal);
   });
 });

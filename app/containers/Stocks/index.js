@@ -22,6 +22,9 @@ const Text = styled.p`
   margin-bottom: 0px;
 `;
 
+export const compute = num =>
+  Math.round((num * 0.85 + Number.EPSILON) * 100) / 100;
+
 export function Stocks() {
   const [numStocks, setNumStocks] = useState(6);
   const [numStocksArr, setNumStocksArr] = useState([
@@ -42,8 +45,6 @@ export function Stocks() {
     stockValsCopy[num] = e.target.value;
     setStockVals(stockValsCopy);
   };
-
-  const compute = num => Math.round((num * 0.85 + Number.EPSILON) * 100) / 100;
 
   return (
     <>
