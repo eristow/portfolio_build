@@ -25,7 +25,7 @@ exports[`<HomePage /> should render and match the snapshot 1`] = `
       type="button"
     >
       <a
-        href="https://drive.google.com/file/d/1wZxKA1I1gF5xgExKVLuoM8_FpWyKPtHy/view?usp=sharing"
+        href="https://drive.google.com/file/d/1EYDbyOl885N6W-pFKmJajZMro66dCL1D/view?usp=sharing"
       >
         Resume
       </a>

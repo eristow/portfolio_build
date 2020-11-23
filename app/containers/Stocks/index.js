@@ -20,6 +20,7 @@ const NumStocksContainer = styled.div`
 `;
 const Text = styled.p`
   margin-bottom: 0px;
+  margin-top: 0px;
 `;
 
 export const compute = num =>

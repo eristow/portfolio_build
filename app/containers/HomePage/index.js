@@ -27,7 +27,7 @@ export default function HomePage() {
           </a>
         </Button>
         <Button type="button" margin="0px 10px">
-          <a href="https://drive.google.com/file/d/1wZxKA1I1gF5xgExKVLuoM8_FpWyKPtHy/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1EYDbyOl885N6W-pFKmJajZMro66dCL1D/view?usp=sharing">
             Resume
           </a>
         </Button>
