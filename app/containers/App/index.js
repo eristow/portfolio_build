@@ -34,19 +34,21 @@ const AppWrapper = styled.div`
 
 export default function App() {
   return (
-    <AppWrapper>
+    <>
       <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        {/* <Route exact path="/resume" component={Resume} /> */}
-        <Route exact path="/work" component={Work} />
-        {/* <Route exact path="/links" component={Links} /> */}
-        <Route exact path="/stocks" component={Stocks} />
-        <Route exact path="/radio" component={Radio} />
-        <Route exact path="/tictactoe" component={TicTacToe} />
-        {/* <Route component={NotFoundPage} /> */}
-      </Switch>
-      <GlobalStyle />
-    </AppWrapper>
+      <AppWrapper>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          {/* <Route exact path="/resume" component={Resume} /> */}
+          <Route exact path="/work" component={Work} />
+          {/* <Route exact path="/links" component={Links} /> */}
+          <Route exact path="/stocks" component={Stocks} />
+          <Route exact path="/radio" component={Radio} />
+          <Route exact path="/tictactoe" component={TicTacToe} />
+          {/* <Route component={NotFoundPage} /> */}
+        </Switch>
+        <GlobalStyle />
+      </AppWrapper>
+    </>
   );
 }

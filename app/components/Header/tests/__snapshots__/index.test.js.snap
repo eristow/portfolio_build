@@ -2,21 +2,70 @@
 
 exports[`<Header /> Should render and match the snapshot 1`] = `
 <div
-  class="Header__NavBar-sc-103fqwf-0 bhratY"
+  class="Header__NavBar-sc-103fqwf-0 kikQYX"
 >
   <a
-    class="HeaderLink-b4007c-0 cQDFmd"
+    class="HeaderLink-b4007c-0 fCdrMR"
     color="#bb86fc"
     href="/"
+    style="margin-left: auto;"
   >
     Home
   </a>
   <a
-    class="HeaderLink-b4007c-0 cQDFmd"
+    class="HeaderLink-b4007c-0 fCdrMR"
     color="#bb86fc"
     href="/work"
   >
     Work
   </a>
+  <button
+    class="MenuButton__HeaderButton-sc-48hn2a-0 kqgDcz"
+    color="#86fcbb"
+  >
+    <svg
+      aria-hidden="true"
+      class="StyledIconBase-ea9ulj-0 iLHuDN"
+      fill="currentColor"
+      focusable="false"
+      height="19"
+      viewBox="0 0 24 24"
+      width="19"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        data-name="Layer 2"
+      >
+        <g
+          data-name="menu"
+        >
+          <rect
+            height="2"
+            rx="0.95"
+            ry="0.95"
+            width="18"
+            x="3"
+            y="11"
+          />
+          <rect
+            height="2"
+            rx="0.95"
+            ry="0.95"
+            width="18"
+            x="3"
+            y="16"
+          />
+          <rect
+            height="2"
+            rx="0.95"
+            ry="0.95"
+            width="18"
+            x="3"
+            y="6"
+          />
+        </g>
+      </g>
+    </svg>
+  </button>
 </div>
 `;

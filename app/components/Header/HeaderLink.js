@@ -7,7 +7,7 @@ const HeaderLink = styled(Link).attrs(props => ({
 }))`
   display: inline-flex;
   padding: 0.5em 1em;
-  margin: 1em 0.4em;
+  margin: 0.4em 0.4em;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
