@@ -9,7 +9,28 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
     class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
   >
     <button
-      class="Button-cbu1yy-0 gJgWfK"
+      class="Button-cbu1yy-0 gCZweK"
+      color="#03dac6"
+      type="button"
+    >
+      Stock App
+    </button>
+    <button
+      class="Button-cbu1yy-0 hpNGlw"
+      color="#03dac6"
+      type="button"
+    >
+      TicTacToe
+    </button>
+  </div>
+  <h3>
+    Web DAW
+  </h3>
+  <div
+    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
+  >
+    <button
+      class="Button-cbu1yy-0 gCZweK"
       color="#03dac6"
       type="button"
     >
@@ -20,7 +41,7 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
       </a>
     </button>
     <button
-      class="Button-cbu1yy-0 izjhvx"
+      class="Button-cbu1yy-0 hpNGlw"
       color="#03dac6"
       type="button"
     >
@@ -31,7 +52,7 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
       </a>
     </button>
     <button
-      class="Button-cbu1yy-0 izjhvx"
+      class="Button-cbu1yy-0 hpNGlw"
       color="#03dac6"
       type="button"
     >
@@ -40,24 +61,6 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
       >
         Web DAW Back-End Code
       </a>
-    </button>
-  </div>
-  <div
-    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
-  >
-    <button
-      class="Button-cbu1yy-0 gJgWfK"
-      color="#03dac6"
-      type="button"
-    >
-      Stock App
-    </button>
-    <button
-      class="Button-cbu1yy-0 izjhvx"
-      color="#03dac6"
-      type="button"
-    >
-      TicTacToe
     </button>
   </div>
 </div>
