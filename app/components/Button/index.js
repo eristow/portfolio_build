@@ -22,6 +22,7 @@ const Button = styled.button.attrs(props => ({
   margin: ${props => props.margin};
   align-self: center;
   min-width: 100px;
+  cursor: pointer;
 
   &:active {
     background: ${props => props.color};

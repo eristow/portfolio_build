@@ -31,6 +31,8 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     color: white;
+    text-decoration: underline;
+    text-align: center;
     opacity: 87%;
   }
 
@@ -39,9 +41,20 @@ const GlobalStyle = createGlobalStyle`
     opacity: 87%;
   }
 
+  h3 {
+    color: white;
+    opacity: 87%;
+    margin-bottom: 10px;
+  }
+
   ul {
     color: white;
     opacity: 87%;
+  }
+
+  a {
+    color: #03dac6;
+    text-decoration: none;
   }
 `;
 

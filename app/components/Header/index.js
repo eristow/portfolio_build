@@ -13,13 +13,13 @@ import MenuButton from './MenuButton';
 
 const NavBar = styled.div`
   text-align: center;
-  border-bottom: solid white 2px;
-  background: #222222;
+  border-bottom: solid darkgray 1px;
+  background: #2d2d2d;
   display: flex;
 `;
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   if (!isOpen) {
     return (

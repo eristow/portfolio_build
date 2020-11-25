@@ -24,21 +24,6 @@ export function Work() {
       {/* {goToRadio ? <Redirect to="radio" /> : <></>} */}
       {goToTicTacToe ? <Redirect to="tictactoe" /> : <></>}
       <ButtonContainer>
-        <Button type="button">
-          <a href="https://web-daw-frontend.herokuapp.com/">Web DAW Project</a>
-        </Button>
-        <Button type="button" margin="10px 10px">
-          <a href="https://github.com/eristow/web-daw">
-            Web DAW Front-End Code
-          </a>
-        </Button>
-        <Button type="button" margin="10px 10px">
-          <a href="https://github.com/eristow/web-daw-backend">
-            Web DAW Back-End Code
-          </a>
-        </Button>
-      </ButtonContainer>
-      <ButtonContainer>
         <Button type="button" onClick={() => setGoToStock(true)}>
           Stock App
         </Button>
@@ -51,10 +36,26 @@ export function Work() {
         </Button> */}
         <Button
           type="button"
-          margin="10px 10px"
+          margin="0px 10px"
           onClick={() => setGoToTicTacToe(true)}
         >
           TicTacToe
+        </Button>
+      </ButtonContainer>
+      <h3>Web DAW</h3>
+      <ButtonContainer>
+        <Button type="button">
+          <a href="https://web-daw-frontend.herokuapp.com/">Web DAW Project</a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://github.com/eristow/web-daw">
+            Web DAW Front-End Code
+          </a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://github.com/eristow/web-daw-backend">
+            Web DAW Back-End Code
+          </a>
         </Button>
       </ButtonContainer>
     </div>
