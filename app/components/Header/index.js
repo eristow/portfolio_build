@@ -46,7 +46,7 @@ function Buttons() {
   return (
     <>
       <HeaderLink to="/" style={{ marginLeft: 'auto' }}>
-        Home
+        Info
       </HeaderLink>
       {/* <HeaderLink to="/resume">Resume</HeaderLink> */}
       <HeaderLink to="/work">Work</HeaderLink>

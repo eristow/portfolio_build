@@ -18,7 +18,7 @@ const ButtonContainer = styled.div`
 export default function HomePage() {
   return (
     <div>
-      <h1>Profiles</h1>
+      <h1>My Info</h1>
       <ButtonContainer>
         <Button type="button">
           <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
