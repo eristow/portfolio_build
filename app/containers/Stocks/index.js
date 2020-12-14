@@ -13,11 +13,13 @@ import styled from 'styled-components';
 import Input from '../../components/Input';
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
 `;
 const NumStocksContainer = styled.div`
   margin-right: 30px;
 `;
+const StocksContainer = styled.div``;
 const Text = styled.p`
   margin-bottom: 0px;
   margin-top: 0px;
@@ -61,7 +63,7 @@ export function Stocks() {
             max="10"
           />
         </NumStocksContainer>
-        <div>
+        <StocksContainer>
           {numStocksArr.map(num => (
             <div key={`stock${num}`}>
               <Text>
@@ -74,7 +76,7 @@ export function Stocks() {
               />
             </div>
           ))}
-        </div>
+        </StocksContainer>
       </Container>
     </>
   );

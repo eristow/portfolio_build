@@ -18,8 +18,7 @@ const ButtonContainer = styled.div`
 export default function HomePage() {
   return (
     <div>
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <h1>Evan Ristow's Portfolio</h1>
+      <h1>Profiles</h1>
       <ButtonContainer>
         <Button type="button">
           <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
