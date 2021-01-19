@@ -22,6 +22,13 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
     >
       TicTacToe
     </button>
+    <button
+      class="Button-cbu1yy-0 hpNGlw"
+      color="#03dac6"
+      type="button"
+    >
+      Recipe Calculator
+    </button>
   </div>
   <h3>
     Web DAW

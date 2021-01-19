@@ -16,13 +16,15 @@ export function Work() {
   const [goToStock, setGoToStock] = useState(false);
   // const [goToRadio, setGoToRadio] = useState(false);
   const [goToTicTacToe, setGoToTicTacToe] = useState(false);
+  const [goToRecipe, setGoToRecipe] = useState(false);
 
   return (
     <div>
       <h1>My Work</h1>
-      {goToStock ? <Redirect to="stocks" /> : <></>}
-      {/* {goToRadio ? <Redirect to="radio" /> : <></>} */}
-      {goToTicTacToe ? <Redirect to="tictactoe" /> : <></>}
+      {goToStock && <Redirect to="stocks" />}
+      {/* {goToRadio && <Redirect to="radio" />} */}
+      {goToTicTacToe && <Redirect to="tictactoe" />}
+      {goToRecipe && <Redirect to="recipe" />}
       <ButtonContainer>
         <Button type="button" onClick={() => setGoToStock(true)}>
           Stock App
@@ -40,6 +42,13 @@ export function Work() {
           onClick={() => setGoToTicTacToe(true)}
         >
           TicTacToe
+        </Button>
+        <Button
+          type="button"
+          margin="0px 10px"
+          onClick={() => setGoToRecipe(true)}
+        >
+          Recipe Calculator
         </Button>
       </ButtonContainer>
       <h3>Web DAW</h3>

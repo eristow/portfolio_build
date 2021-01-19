@@ -30,6 +30,11 @@ exports[`<App /> should render and match the snapshot 1`] = `
         exact={true}
         path="/tictactoe"
       />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/recipe"
+      />
     </Switch>
     <GlobalStyleComponent />
   </ForwardRef>

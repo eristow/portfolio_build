@@ -3,7 +3,7 @@
 exports[`<HomePage /> should render and match the snapshot 1`] = `
 <div>
   <h1>
-    Profiles
+    My Info
   </h1>
   <div
     class="HomePage__ButtonContainer-sc-1js5oki-0 bRyjkW"

@@ -20,6 +20,7 @@ import Stocks from 'containers/Stocks/Loadable';
 import Radio from 'containers/Radio/Loadable';
 import TicTacToe from 'containers/TicTacToe/Loadable';
 // import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import RecipeCalculator from 'containers/RecipeCalculator/Loadable';
 
 import GlobalStyle from '../../global-styles';
 
@@ -46,6 +47,7 @@ export default function App() {
           <Route exact path="/radio" component={Radio} />
           <Route exact path="/tictactoe" component={TicTacToe} />
           {/* <Route component={NotFoundPage} /> */}
+          <Route exact path="/recipe" component={RecipeCalculator} />
         </Switch>
         <GlobalStyle />
       </AppWrapper>
