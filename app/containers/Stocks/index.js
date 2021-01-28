@@ -29,7 +29,7 @@ export const compute = num =>
   Math.round((num * 0.85 + Number.EPSILON) * 100) / 100;
 
 export function Stocks() {
-  const [numStocks, setNumStocks] = useState(6);
+  const [numStocks, setNumStocks] = useState(7);
   const [numStocksArr, setNumStocksArr] = useState([
     ...Array(numStocks).keys(),
   ]);

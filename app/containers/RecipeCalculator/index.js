@@ -75,6 +75,11 @@ export function RecipeCalculator() {
           // eslint-disable-next-line react/no-array-index-key
           <div key={`item ${i}`}>
             <h3>{`Item ${i + 1}:`}</h3>
+            <input
+              type="text"
+              placeholder="Item name"
+              style={{ width: '150px' }}
+            />
             <Input
               item={item}
               i={i}
