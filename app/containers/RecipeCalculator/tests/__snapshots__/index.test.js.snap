@@ -30,6 +30,11 @@ exports[`<RecipeCalculator /> Should render and match the snapshot 1`] = `
       <h3>
         Item 1:
       </h3>
+      <input
+        placeholder="Item name"
+        style="width: 150px;"
+        type="text"
+      />
       <div>
         <p
           class="Input__Text-sc-1f9uz6z-0 rrZjn"
@@ -106,7 +111,7 @@ exports[`<RecipeCalculator /> Should render and match the snapshot 1`] = `
         />
       </div>
       <button
-        class="Button-cbu1yy-0 gCZweK"
+        class="Button-cbu1yy-0 hKoJdu"
         color="#03dac6"
         type="button"
       >
@@ -115,7 +120,7 @@ exports[`<RecipeCalculator /> Should render and match the snapshot 1`] = `
     </div>
   </div>
   <button
-    class="Button-cbu1yy-0 gCZweK"
+    class="Button-cbu1yy-0 hKoJdu"
     color="#03dac6"
     type="button"
   >
