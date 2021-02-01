@@ -4,12 +4,13 @@
  *
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import HeaderLink from './HeaderLink';
-import MenuButton from './MenuButton';
+// import HeaderLink from './HeaderLink';
+// import MenuButton from './MenuButton';
 
 const Title = styled.h1`
   margin: 3px;
@@ -32,61 +33,46 @@ const NavContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 `;
-const ButtonsContainer = styled.div`
-  margin-left: auto;
-  text-align: center;
-  display: flex;
-  @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-  }
-`;
+// const ButtonsContainer = styled.div`
+//   margin-left: auto;
+//   text-align: center;
+//   display: flex;
+//   @media (max-width: 768px) {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+//   }
+// `;
 
-function Buttons() {
-  return (
-    <>
-      <HeaderLink to="/" style={{ marginLeft: 'auto' }}>
-        Info
-      </HeaderLink>
-      {/* <HeaderLink to="/resume">Resume</HeaderLink> */}
-      <HeaderLink to="/work">Work</HeaderLink>
-      {/* <HeaderLink to="/links">Links</HeaderLink> */}
-    </>
-  );
-}
+// function Buttons() {
+//   return (
+//     <>
+//       <HeaderLink to="/" style={{ marginLeft: 'auto' }}>
+//         Info
+//       </HeaderLink>
+//       {/* <HeaderLink to="/resume">Resume</HeaderLink> */}
+//       <HeaderLink to="/work">Work</HeaderLink>
+//       {/* <HeaderLink to="/links">Links</HeaderLink> */}
+//     </>
+//   );
+// }
 
-function HeaderContent() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  if (!isOpen) {
-    return (
-      <MenuButton shouldHaveMarginLeft isOpen={isOpen} setIsOpen={setIsOpen} />
-    );
-  }
-  return (
-    <ButtonsContainer>
-      {window.matchMedia('(max-width: 768px)').matches ? (
-        <>
-          <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-          <Buttons />
-        </>
-      ) : (
-        <>
-          <Buttons />
-          <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-        </>
-      )}
-    </ButtonsContainer>
-  );
-}
+// function HeaderContent() {
+//   return (
+//     <ButtonsContainer>
+//       <Buttons />
+//     </ButtonsContainer>
+//   );
+// }
 
 function Header() {
   return (
     <NavBar>
       <NavContainer>
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        <Title>Evan Ristow's Portfolio</Title>
-        <HeaderContent />
+        <Link to="/">
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          <Title>Evan Ristow's Portfolio</Title>
+        </Link>
+        {/* <HeaderContent /> */}
       </NavContainer>
     </NavBar>
   );

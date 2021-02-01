@@ -71,6 +71,7 @@ export function Stocks() {
               </Text>
               <Input
                 placeholder={0}
+                type="number"
                 value={stockVals[num]}
                 onChange={e => onChangeStockVal(e, num)}
               />

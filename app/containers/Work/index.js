@@ -4,12 +4,15 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
+import { FaChartLine, FaRegCircle, FaMusic, FaQuestion } from 'react-icons/fa';
+import { ImCross, ImSpoonKnife } from 'react-icons/im';
 
 import Button from 'components/Button';
 
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 `;
 
 export function Work() {
@@ -26,8 +29,12 @@ export function Work() {
       {goToTicTacToe && <Redirect to="tictactoe" />}
       {goToRecipe && <Redirect to="recipe" />}
       <ButtonContainer>
-        <Button type="button" onClick={() => setGoToStock(true)}>
-          Stock App
+        <Button
+          type="button"
+          margin="0px 10px 0px 0px"
+          onClick={() => setGoToStock(true)}
+        >
+          <FaChartLine /> Stock App
         </Button>
         {/* <Button
           type="button"
@@ -41,20 +48,22 @@ export function Work() {
           margin="0px 10px"
           onClick={() => setGoToTicTacToe(true)}
         >
-          TicTacToe
+          <ImCross /> TicTacToe <FaRegCircle />
         </Button>
         <Button
           type="button"
           margin="0px 10px"
           onClick={() => setGoToRecipe(true)}
         >
-          Recipe Calculator
+          <ImSpoonKnife /> Recipe Calculator
         </Button>
       </ButtonContainer>
       <h3>Web DAW</h3>
       <ButtonContainer>
-        <Button type="button">
-          <a href="https://web-daw-frontend.herokuapp.com/">Web DAW Project</a>
+        <Button type="button" margin="0px 10px 0px 0px">
+          <a href="https://web-daw-frontend.herokuapp.com/">
+            <FaMusic /> Web DAW Site
+          </a>
         </Button>
         <Button type="button" margin="0px 10px">
           <a href="https://github.com/eristow/web-daw">
@@ -67,9 +76,16 @@ export function Work() {
           </a>
         </Button>
       </ButtonContainer>
-      <h3>Date Night Cards</h3>
-      <Button type="button">
-        <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">Date Night</a>
+      <h3>Date Night Questions</h3>
+      <Button type="button" margin="0px 10px 0px 0px">
+        <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
+          <FaQuestion /> Date Night Site
+        </a>
+      </Button>
+      <Button type="button" margin="0px 10px">
+        <a href="https://github.com/eristow/date-night-coding-challenge">
+          Date Night Code
+        </a>
       </Button>
     </div>
   );
