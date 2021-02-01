@@ -13,6 +13,13 @@ const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
+  @media (max-width: 480px) {
+    display: block;
+  }
+`;
+
+const H2 = styled.h2`
+  margin-bottom: 12px;
 `;
 
 export function Work() {
@@ -28,6 +35,38 @@ export function Work() {
       {/* {goToRadio && <Redirect to="radio" />} */}
       {goToTicTacToe && <Redirect to="tictactoe" />}
       {goToRecipe && <Redirect to="recipe" />}
+      <H2>Web DAW</H2>
+      <ButtonContainer>
+        <Button type="button" margin="0px 10px 0px 0px">
+          <a href="https://web-daw-frontend.herokuapp.com/">
+            <FaMusic /> Web DAW Site
+          </a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://github.com/eristow/web-daw">
+            Web DAW Front-End Code
+          </a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://github.com/eristow/web-daw-backend">
+            Web DAW Back-End Code
+          </a>
+        </Button>
+      </ButtonContainer>
+      <H2>Date Night Questions</H2>
+      <ButtonContainer>
+        <Button type="button" margin="0px 10px 0px 0px">
+          <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
+            <FaQuestion /> Date Night Site
+          </a>
+        </Button>
+        <Button type="button" margin="0px 10px">
+          <a href="https://github.com/eristow/date-night-coding-challenge">
+            Date Night Code
+          </a>
+        </Button>
+      </ButtonContainer>
+      <H2>Other</H2>
       <ButtonContainer>
         <Button
           type="button"
@@ -46,47 +85,18 @@ export function Work() {
         <Button
           type="button"
           margin="0px 10px"
-          onClick={() => setGoToTicTacToe(true)}
-        >
-          <ImCross /> TicTacToe <FaRegCircle />
-        </Button>
-        <Button
-          type="button"
-          margin="0px 10px"
           onClick={() => setGoToRecipe(true)}
         >
           <ImSpoonKnife /> Recipe Calculator
         </Button>
-      </ButtonContainer>
-      <h3>Web DAW</h3>
-      <ButtonContainer>
-        <Button type="button" margin="0px 10px 0px 0px">
-          <a href="https://web-daw-frontend.herokuapp.com/">
-            <FaMusic /> Web DAW Site
-          </a>
-        </Button>
-        <Button type="button" margin="0px 10px">
-          <a href="https://github.com/eristow/web-daw">
-            Web DAW Front-End Code
-          </a>
-        </Button>
-        <Button type="button" margin="0px 10px">
-          <a href="https://github.com/eristow/web-daw-backend">
-            Web DAW Back-End Code
-          </a>
+        <Button
+          type="button"
+          margin="0px 10px"
+          onClick={() => setGoToTicTacToe(true)}
+        >
+          <ImCross /> TicTacToe <FaRegCircle />
         </Button>
       </ButtonContainer>
-      <h3>Date Night Questions</h3>
-      <Button type="button" margin="0px 10px 0px 0px">
-        <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
-          <FaQuestion /> Date Night Site
-        </a>
-      </Button>
-      <Button type="button" margin="0px 10px">
-        <a href="https://github.com/eristow/date-night-coding-challenge">
-          Date Night Code
-        </a>
-      </Button>
     </div>
   );
 }

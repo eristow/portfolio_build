@@ -16,6 +16,9 @@ import Work from 'containers/Work/Loadable';
 const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 480px) {
+    display: block;
+  }
 `;
 
 const InfoContainer = styled.div`

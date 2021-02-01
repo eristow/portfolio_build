@@ -21,8 +21,13 @@ const Button = styled.button.attrs(props => ({
   border-radius: 4px;
   margin: ${props => props.margin};
   align-self: center;
-  min-width: 100px;
+  // min-width: 100px;
   cursor: pointer;
+  @media (max-width: 480px) {
+    flex: 1;
+    width: 100%;
+    margin: 2px 2px;
+  }
 
   &:active {
     background: ${props => props.color};
