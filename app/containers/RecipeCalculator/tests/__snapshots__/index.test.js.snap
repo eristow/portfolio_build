@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeCalculator /> Should render and match the snapshot 1`] = `
+<div
+  class="RecipeCalculator__Container-sc-1y8i9c0-0 irnkSU"
+>
+  <div
+    class="RecipeCalculator__TotalsContainer-sc-1y8i9c0-1 dbBHhk"
+  >
+    <p>
+      Calories: 
+    </p>
+    <p>
+      Fat: 
+    </p>
+    <p>
+      Carbs: 
+    </p>
+    <p>
+      Protein: 
+    </p>
+    <p>
+      Weight: 
+    </p>
+  </div>
+  <div
+    class="RecipeCalculator__ItemsContainer-sc-1y8i9c0-2 bfZkJA"
+  >
+    <div>
+      <h3>
+        Item 1:
+      </h3>
+      <input
+        placeholder="Item name"
+        style="width: 150px;"
+        type="text"
+      />
+      <div>
+        <p
+          class="Input__Text-sc-1f9uz6z-0 rrZjn"
+        >
+          Calories:
+        </p>
+        <input
+          class="Input-e90yhw-0 jVqxKD"
+          min="0"
+          placeholder="0"
+          style="width: 150px;"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <p
+          class="Input__Text-sc-1f9uz6z-0 rrZjn"
+        >
+          Fat:
+        </p>
+        <input
+          class="Input-e90yhw-0 jVqxKD"
+          min="0"
+          placeholder="0"
+          style="width: 150px;"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <p
+          class="Input__Text-sc-1f9uz6z-0 rrZjn"
+        >
+          Carbs:
+        </p>
+        <input
+          class="Input-e90yhw-0 jVqxKD"
+          min="0"
+          placeholder="0"
+          style="width: 150px;"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <p
+          class="Input__Text-sc-1f9uz6z-0 rrZjn"
+        >
+          Protein:
+        </p>
+        <input
+          class="Input-e90yhw-0 jVqxKD"
+          min="0"
+          placeholder="0"
+          style="width: 150px;"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <p
+          class="Input__Text-sc-1f9uz6z-0 rrZjn"
+        >
+          Weight:
+        </p>
+        <input
+          class="Input-e90yhw-0 jVqxKD"
+          min="0"
+          placeholder="0"
+          style="width: 150px;"
+          type="number"
+          value=""
+        />
+      </div>
+      <button
+        class="Button-cbu1yy-0 hKoJdu"
+        color="#03dac6"
+        type="button"
+      >
+        Remove Item 1
+      </button>
+    </div>
+  </div>
+  <button
+    class="Button-cbu1yy-0 hKoJdu"
+    color="#03dac6"
+    type="button"
+  >
+    Add Item
+  </button>
+</div>
+`;

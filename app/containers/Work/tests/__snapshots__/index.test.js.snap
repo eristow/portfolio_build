@@ -5,22 +5,40 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
   <h1>
     My Work
   </h1>
+  <h2
+    class="Work__H2-ejvr5h-1 cqfUdW"
+  >
+    Web DAW
+  </h2>
   <div
-    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
+    class="Work__ButtonContainer-ejvr5h-0 bqfxoO"
   >
     <button
-      class="Button-cbu1yy-0 gJgWfK"
+      class="Button-cbu1yy-0 WPkYq"
       color="#03dac6"
       type="button"
     >
       <a
         href="https://web-daw-frontend.herokuapp.com/"
       >
-        Web DAW Project
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+          />
+        </svg>
+         Web DAW Site
       </a>
     </button>
     <button
-      class="Button-cbu1yy-0 izjhvx"
+      class="Button-cbu1yy-0 krepjS"
       color="#03dac6"
       type="button"
     >
@@ -31,7 +49,7 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
       </a>
     </button>
     <button
-      class="Button-cbu1yy-0 izjhvx"
+      class="Button-cbu1yy-0 krepjS"
       color="#03dac6"
       type="button"
     >
@@ -42,22 +60,132 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
       </a>
     </button>
   </div>
+  <h2
+    class="Work__H2-ejvr5h-1 cqfUdW"
+  >
+    Date Night Questions
+  </h2>
   <div
-    class="Work__ButtonContainer-ejvr5h-0 dvjAQO"
+    class="Work__ButtonContainer-ejvr5h-0 bqfxoO"
   >
     <button
-      class="Button-cbu1yy-0 gJgWfK"
+      class="Button-cbu1yy-0 WPkYq"
       color="#03dac6"
       type="button"
     >
-      Stock App
+      <a
+        href="https://master.d7vp4hauoyn5j.amplifyapp.com/"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 384 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"
+          />
+        </svg>
+         Date Night Site
+      </a>
     </button>
     <button
-      class="Button-cbu1yy-0 izjhvx"
+      class="Button-cbu1yy-0 krepjS"
       color="#03dac6"
       type="button"
     >
-      TicTacToe
+      <a
+        href="https://github.com/eristow/date-night-coding-challenge"
+      >
+        Date Night Code
+      </a>
+    </button>
+  </div>
+  <h2
+    class="Work__H2-ejvr5h-1 cqfUdW"
+  >
+    Other
+  </h2>
+  <div
+    class="Work__ButtonContainer-ejvr5h-0 bqfxoO"
+  >
+    <button
+      class="Button-cbu1yy-0 WPkYq"
+      color="#03dac6"
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+        />
+      </svg>
+       Stock App
+    </button>
+    <button
+      class="Button-cbu1yy-0 krepjS"
+      color="#03dac6"
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        version="1.1"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3.5 0c-1.657 0-3 1.567-3 3.5 0 1.655 0.985 3.042 2.308 3.406l-0.497 8.096c-0.034 0.549 0.389 0.998 0.939 0.998h0.5c0.55 0 0.972-0.449 0.939-0.998l-0.497-8.096c1.323-0.365 2.308-1.751 2.308-3.406 0-1.933-1.343-3.5-3-3.5zM13.583 0l-0.833 5h-0.625l-0.417-5h-0.417l-0.417 5h-0.625l-0.833-5h-0.417v6.5c0 0.276 0.224 0.5 0.5 0.5h1.302l-0.491 8.002c-0.034 0.549 0.389 0.998 0.939 0.998h0.5c0.55 0 0.972-0.449 0.939-0.998l-0.491-8.002h1.302c0.276 0 0.5-0.224 0.5-0.5v-6.5h-0.417z"
+        />
+      </svg>
+       Recipe Calculator
+    </button>
+    <button
+      class="Button-cbu1yy-0 krepjS"
+      color="#03dac6"
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        version="1.1"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.854 12.854c-0-0-0-0-0-0l-4.854-4.854 4.854-4.854c0-0 0-0 0-0 0.052-0.052 0.090-0.113 0.114-0.178 0.066-0.178 0.028-0.386-0.114-0.529l-2.293-2.293c-0.143-0.143-0.351-0.181-0.529-0.114-0.065 0.024-0.126 0.062-0.178 0.114 0 0-0 0-0 0l-4.854 4.854-4.854-4.854c-0-0-0-0-0-0-0.052-0.052-0.113-0.090-0.178-0.114-0.178-0.066-0.386-0.029-0.529 0.114l-2.293 2.293c-0.143 0.143-0.181 0.351-0.114 0.529 0.024 0.065 0.062 0.126 0.114 0.178 0 0 0 0 0 0l4.854 4.854-4.854 4.854c-0 0-0 0-0 0-0.052 0.052-0.090 0.113-0.114 0.178-0.066 0.178-0.029 0.386 0.114 0.529l2.293 2.293c0.143 0.143 0.351 0.181 0.529 0.114 0.065-0.024 0.126-0.062 0.178-0.114 0-0 0-0 0-0l4.854-4.854 4.854 4.854c0 0 0 0 0 0 0.052 0.052 0.113 0.090 0.178 0.114 0.178 0.066 0.386 0.029 0.529-0.114l2.293-2.293c0.143-0.143 0.181-0.351 0.114-0.529-0.024-0.065-0.062-0.126-0.114-0.178z"
+        />
+      </svg>
+       TicTacToe 
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z"
+        />
+      </svg>
     </button>
   </div>
 </div>

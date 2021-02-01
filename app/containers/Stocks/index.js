@@ -13,11 +13,13 @@ import styled from 'styled-components';
 import Input from '../../components/Input';
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
 `;
 const NumStocksContainer = styled.div`
   margin-right: 30px;
 `;
+const StocksContainer = styled.div``;
 const Text = styled.p`
   margin-bottom: 0px;
   margin-top: 0px;
@@ -27,7 +29,7 @@ export const compute = num =>
   Math.round((num * 0.85 + Number.EPSILON) * 100) / 100;
 
 export function Stocks() {
-  const [numStocks, setNumStocks] = useState(6);
+  const [numStocks, setNumStocks] = useState(7);
   const [numStocksArr, setNumStocksArr] = useState([
     ...Array(numStocks).keys(),
   ]);
@@ -61,7 +63,7 @@ export function Stocks() {
             max="10"
           />
         </NumStocksContainer>
-        <div>
+        <StocksContainer>
           {numStocksArr.map(num => (
             <div key={`stock${num}`}>
               <Text>
@@ -69,12 +71,13 @@ export function Stocks() {
               </Text>
               <Input
                 placeholder={0}
+                type="number"
                 value={stockVals[num]}
                 onChange={e => onChangeStockVal(e, num)}
               />
             </div>
           ))}
-        </div>
+        </StocksContainer>
       </Container>
     </>
   );

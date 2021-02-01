@@ -6,8 +6,8 @@ const HeaderLink = styled(Link).attrs(props => ({
   color: props.color || '#bb86fc',
 }))`
   display: inline-flex;
-  padding: 0.5em 1em;
-  margin: 1em 0.4em;
+  padding: 0.5em 0.5em;
+  margin: 0.4em 0.4em;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;

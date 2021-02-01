@@ -2,21 +2,20 @@
 
 exports[`<Header /> Should render and match the snapshot 1`] = `
 <div
-  class="Header__NavBar-sc-103fqwf-0 bhratY"
+  class="Header__NavBar-sc-103fqwf-1 febavJ"
 >
-  <a
-    class="HeaderLink-b4007c-0 cQDFmd"
-    color="#bb86fc"
-    href="/"
+  <div
+    class="Header__NavContainer-sc-103fqwf-2 bKXLAJ"
   >
-    Home
-  </a>
-  <a
-    class="HeaderLink-b4007c-0 cQDFmd"
-    color="#bb86fc"
-    href="/work"
-  >
-    Work
-  </a>
+    <a
+      href="/"
+    >
+      <h1
+        class="Header__Title-sc-103fqwf-0 eBcnKA"
+      >
+        Evan Ristow's Portfolio
+      </h1>
+    </a>
+  </div>
 </div>
 `;
