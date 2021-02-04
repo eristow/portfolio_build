@@ -21,7 +21,6 @@ const Button = styled.button.attrs(props => ({
   border-radius: 4px;
   margin: ${props => props.margin};
   align-self: center;
-  // min-width: 100px;
   cursor: pointer;
   @media (max-width: 480px) {
     flex: 1;

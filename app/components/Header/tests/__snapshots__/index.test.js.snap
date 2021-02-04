@@ -7,15 +7,26 @@ exports[`<Header /> Should render and match the snapshot 1`] = `
   <div
     class="Header__NavContainer-sc-103fqwf-2 bKXLAJ"
   >
-    <a
-      href="/"
+    <div
+      class="Header__EmptyContainer-sc-103fqwf-5 kOkkiM"
+    />
+    <div
+      class="Header__TextContainer-sc-103fqwf-4 YwQcy"
     >
-      <h1
-        class="Header__Title-sc-103fqwf-0 eBcnKA"
+      <a
+        href="/"
+        style="margin-left: auto; margin-right: auto;"
       >
-        Evan Ristow's Portfolio
-      </h1>
-    </a>
+        <h1
+          class="Header__Title-sc-103fqwf-0 gZqwye"
+        >
+          Evan Ristow's Portfolio
+        </h1>
+      </a>
+    </div>
+    <div
+      class="Header__EmptyContainer-sc-103fqwf-5 kOkkiM"
+    />
   </div>
 </div>
 `;

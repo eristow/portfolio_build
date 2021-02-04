@@ -13,13 +13,13 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
   <div
     class="Work__ButtonContainer-ejvr5h-0 bqfxoO"
   >
-    <button
-      class="Button-cbu1yy-0 WPkYq"
-      color="#03dac6"
-      type="button"
+    <a
+      href="https://web-daw-frontend.herokuapp.com/"
     >
-      <a
-        href="https://web-daw-frontend.herokuapp.com/"
+      <button
+        class="Button-cbu1yy-0 WPkYq"
+        color="#03dac6"
+        type="button"
       >
         <svg
           fill="currentColor"
@@ -35,30 +35,30 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
           />
         </svg>
          Web DAW Site
-      </a>
-    </button>
-    <button
-      class="Button-cbu1yy-0 krepjS"
-      color="#03dac6"
-      type="button"
+      </button>
+    </a>
+    <a
+      href="https://github.com/eristow/web-daw"
     >
-      <a
-        href="https://github.com/eristow/web-daw"
+      <button
+        class="Button-cbu1yy-0 krepjS"
+        color="#03dac6"
+        type="button"
       >
         Web DAW Front-End Code
-      </a>
-    </button>
-    <button
-      class="Button-cbu1yy-0 krepjS"
-      color="#03dac6"
-      type="button"
+      </button>
+    </a>
+    <a
+      href="https://github.com/eristow/web-daw-backend"
     >
-      <a
-        href="https://github.com/eristow/web-daw-backend"
+      <button
+        class="Button-cbu1yy-0 krepjS"
+        color="#03dac6"
+        type="button"
       >
         Web DAW Back-End Code
-      </a>
-    </button>
+      </button>
+    </a>
   </div>
   <h2
     class="Work__H2-ejvr5h-1 cqfUdW"
@@ -68,13 +68,13 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
   <div
     class="Work__ButtonContainer-ejvr5h-0 bqfxoO"
   >
-    <button
-      class="Button-cbu1yy-0 WPkYq"
-      color="#03dac6"
-      type="button"
+    <a
+      href="https://master.d7vp4hauoyn5j.amplifyapp.com/"
     >
-      <a
-        href="https://master.d7vp4hauoyn5j.amplifyapp.com/"
+      <button
+        class="Button-cbu1yy-0 WPkYq"
+        color="#03dac6"
+        type="button"
       >
         <svg
           fill="currentColor"
@@ -90,19 +90,19 @@ exports[`<Work /> Should render and match the snapshot 1`] = `
           />
         </svg>
          Date Night Site
-      </a>
-    </button>
-    <button
-      class="Button-cbu1yy-0 krepjS"
-      color="#03dac6"
-      type="button"
+      </button>
+    </a>
+    <a
+      href="https://github.com/eristow/date-night-coding-challenge"
     >
-      <a
-        href="https://github.com/eristow/date-night-coding-challenge"
+      <button
+        class="Button-cbu1yy-0 krepjS"
+        color="#03dac6"
+        type="button"
       >
         Date Night Code
-      </a>
-    </button>
+      </button>
+    </a>
   </div>
   <h2
     class="Work__H2-ejvr5h-1 cqfUdW"

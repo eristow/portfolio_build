@@ -37,34 +37,34 @@ export function Work() {
       {goToRecipe && <Redirect to="recipe" />}
       <H2>Web DAW</H2>
       <ButtonContainer>
-        <Button type="button" margin="0px 10px 0px 0px">
-          <a href="https://web-daw-frontend.herokuapp.com/">
+        <a href="https://web-daw-frontend.herokuapp.com/">
+          <Button type="button" margin="0px 10px 0px 0px">
             <FaMusic /> Web DAW Site
-          </a>
-        </Button>
-        <Button type="button" margin="0px 10px">
-          <a href="https://github.com/eristow/web-daw">
+          </Button>
+        </a>
+        <a href="https://github.com/eristow/web-daw">
+          <Button type="button" margin="0px 10px">
             Web DAW Front-End Code
-          </a>
-        </Button>
-        <Button type="button" margin="0px 10px">
-          <a href="https://github.com/eristow/web-daw-backend">
+          </Button>
+        </a>
+        <a href="https://github.com/eristow/web-daw-backend">
+          <Button type="button" margin="0px 10px">
             Web DAW Back-End Code
-          </a>
-        </Button>
+          </Button>
+        </a>
       </ButtonContainer>
       <H2>Date Night Questions</H2>
       <ButtonContainer>
-        <Button type="button" margin="0px 10px 0px 0px">
-          <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
+        <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
+          <Button type="button" margin="0px 10px 0px 0px">
             <FaQuestion /> Date Night Site
-          </a>
-        </Button>
-        <Button type="button" margin="0px 10px">
-          <a href="https://github.com/eristow/date-night-coding-challenge">
+          </Button>
+        </a>
+        <a href="https://github.com/eristow/date-night-coding-challenge">
+          <Button type="button" margin="0px 10px">
             Date Night Code
-          </a>
-        </Button>
+          </Button>
+        </a>
       </ButtonContainer>
       <H2>Other</H2>
       <ButtonContainer>

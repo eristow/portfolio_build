@@ -31,16 +31,16 @@ export default function HomePage() {
       <InfoContainer>
         <h1>My Info</h1>
         <ButtonContainer>
-          <Button type="button" margin="0px 10px 0px 0px">
-            <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
+          <a href="https://www.linkedin.com/in/evan-ristow-1a2477102/">
+            <Button type="button" margin="0px 10px 0px 0px">
               <FaLinkedin /> LinkedIn
-            </a>
-          </Button>
-          <Button type="button" margin="0px 10px">
-            <a href="https://drive.google.com/file/d/1EYDbyOl885N6W-pFKmJajZMro66dCL1D/view?usp=sharing">
+            </Button>
+          </a>
+          <a href="https://drive.google.com/file/d/1EYDbyOl885N6W-pFKmJajZMro66dCL1D/view?usp=sharing">
+            <Button type="button" margin="0px 10px">
               <IoDocumentTextOutline /> Resume
-            </a>
-          </Button>
+            </Button>
+          </a>
         </ButtonContainer>
       </InfoContainer>
       <Work />

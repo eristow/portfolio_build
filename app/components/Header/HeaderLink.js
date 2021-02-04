@@ -6,7 +6,7 @@ const HeaderLink = styled(Link).attrs(props => ({
   color: props.color || '#bb86fc',
 }))`
   display: inline-flex;
-  padding: 0.5em 0.5em;
+  padding: 0.7em 0.5em;
   margin: 0.4em 0.4em;
   text-decoration: none;
   border-radius: 4px;
@@ -18,6 +18,10 @@ const HeaderLink = styled(Link).attrs(props => ({
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
+  max-width: 75px;
+  min-width: 75px;
+  min-height: 25px;
+  text-align: center;
   border: 2px solid ${props => props.color};
   color: ${props => props.color};
 

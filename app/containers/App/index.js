@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Header from 'components/Header';
@@ -33,9 +33,11 @@ const AppWrapper = styled.div`
 `;
 
 export default function App() {
+  const location = useLocation();
+
   return (
     <>
-      <Header />
+      <Header showBackButton={location.pathname !== '/'} />
       <AppWrapper>
         <Switch>
           <Route exact path="/" component={HomePage} />
