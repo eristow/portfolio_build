@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
 import { FaChartLine, FaRegCircle, FaMusic, FaQuestion } from 'react-icons/fa';
+import { GiRabbit } from 'react-icons/gi';
 import { ImCross, ImSpoonKnife } from 'react-icons/im';
 
 import Button from 'components/Button';
@@ -68,6 +69,11 @@ export function Work() {
       </ButtonContainer>
       <H2>Other</H2>
       <ButtonContainer>
+        <a href="https://evanristow.com/habbit-rabbit">
+          <Button type="button" margin="0px 10px 0px 0px">
+            <GiRabbit /> Habbit Rabbit
+          </Button>
+        </a>
         <Button
           type="button"
           margin="0px 10px 0px 0px"
