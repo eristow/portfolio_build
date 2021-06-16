@@ -69,7 +69,7 @@ export function Work() {
       </ButtonContainer>
       <H2>Other</H2>
       <ButtonContainer>
-        <a href="https://evanristow.com/habbit-rabbit">
+        <a href="https://habbit-rabbit.netlify.app">
           <Button type="button" margin="0px 10px 0px 0px">
             <GiRabbit /> Habbit Rabbit
           </Button>
