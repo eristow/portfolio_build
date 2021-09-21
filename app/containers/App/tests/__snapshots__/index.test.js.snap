@@ -12,7 +12,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "lp5bah",
+            "key": "fzwuoo",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "lp5bah",
+          "key": "fzwuoo",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -36,7 +36,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
       },
       "location": Object {
         "hash": "",
-        "key": "lp5bah",
+        "key": "fzwuoo",
         "pathname": "/",
         "search": "",
         "state": undefined,
@@ -61,7 +61,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "lp5bah",
+            "key": "fzwuoo",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -75,7 +75,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "lp5bah",
+          "key": "fzwuoo",
           "pathname": "/",
           "search": "",
           "state": undefined,

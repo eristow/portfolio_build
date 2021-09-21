@@ -45,8 +45,9 @@ describe('<Stocks />', () => {
 
   it('compute() should return the correct value', () => {
     const testNum = 79.87;
+    const testMult = 0.85;
     const expectedVal = 67.89;
 
-    expect(compute(testNum)).toBe(expectedVal);
+    expect(compute(testNum, testMult)).toBe(expectedVal);
   });
 });

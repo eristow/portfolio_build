@@ -16,8 +16,16 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
 `;
-const NumStocksContainer = styled.div`
+const VariablesContainer = styled.div`
   margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 175px;
+  @media (max-width: 431px) {
+    flex-direction: row;
+  }
 `;
 const StocksContainer = styled.div``;
 const Text = styled.p`
@@ -25,8 +33,8 @@ const Text = styled.p`
   margin-top: 0px;
 `;
 
-export const compute = num =>
-  Math.round((num * 0.85 + Number.EPSILON) * 100) / 100;
+export const compute = (num, multiplier) =>
+  Math.round((num * multiplier + Number.EPSILON) * 100) / 100;
 
 export function Stocks() {
   const [numStocks, setNumStocks] = useState(7);
@@ -36,6 +44,7 @@ export function Stocks() {
   const [stockVals, setStockVals] = useState({
     ...numStocksArr.map(() => ''),
   });
+  const [multiplier, setMultiplier] = useState(0.8);
 
   const onChangeNumStocks = e => {
     const num = Number(e.target.value);
@@ -49,25 +58,43 @@ export function Stocks() {
     setStockVals(stockValsCopy);
   };
 
+  const onChangeMultiplier = e => {
+    const newMultiplier = Number(e.target.value);
+    setMultiplier(newMultiplier);
+  };
+
   return (
     <>
       <h1>Stock Calculator</h1>
       <Container>
-        <NumStocksContainer>
-          <Text>Number of Stocks:</Text>
-          <Input
-            type="number"
-            value={numStocks}
-            onChange={onChangeNumStocks}
-            min="1"
-            max="10"
-          />
-        </NumStocksContainer>
+        <VariablesContainer>
+          <div>
+            <Text>Number of Stocks:</Text>
+            <Input
+              type="number"
+              value={numStocks}
+              onChange={onChangeNumStocks}
+              min="1"
+              max="10"
+            />
+          </div>
+          <div>
+            <Text>Multiplier</Text>
+            <Input
+              type="number"
+              value={multiplier}
+              onChange={onChangeMultiplier}
+              min="0.0"
+              max="1.0"
+            />
+          </div>
+        </VariablesContainer>
         <StocksContainer>
           {numStocksArr.map(num => (
             <div key={`stock${num}`}>
               <Text>
-                Stock {num + 1} New Stop Price: {compute(stockVals[num])}
+                Stock {num + 1} New Stop Price:{' '}
+                {compute(stockVals[num], multiplier)}
               </Text>
               <Input
                 placeholder={0}
