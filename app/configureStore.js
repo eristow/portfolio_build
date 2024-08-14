@@ -3,9 +3,29 @@
  */
 
 import { createStore, applyMiddleware, compose } from 'redux';
-import { routerMiddleware } from 'connected-react-router';
 import createSagaMiddleware from 'redux-saga';
-import createReducer from './reducers';
+import { combineReducers } from 'redux';
+import { createReduxHistoryContext } from "redux-first-history";
+import { createBrowserHistory } from 'history';
+
+/**
+ * Merges the main reducer with the router state and dynamically injected reducers
+ */
+const { createReduxHistory, routerMiddleware, routerReducer } = createReduxHistoryContext({
+  history: createBrowserHistory(),
+  //other options if needed
+});
+
+export { createReduxHistory };
+
+export function createReducer(injectedReducers = {}) {
+  const rootReducer = combineReducers({
+    router: routerReducer,
+    ...injectedReducers,
+  });
+
+  return rootReducer;
+}
 
 export default function configureStore(initialState = {}, history) {
   let composeEnhancers = compose;
@@ -32,7 +52,7 @@ export default function configureStore(initialState = {}, history) {
   // Create the store with two middlewares
   // 1. sagaMiddleware: Makes redux-sagas work
   // 2. routerMiddleware: Syncs the location/URL path to the state
-  const middlewares = [sagaMiddleware, routerMiddleware(history)];
+  const middlewares = [sagaMiddleware, routerMiddleware];
 
   const enhancers = [applyMiddleware(...middlewares)];
 
@@ -49,11 +69,12 @@ export default function configureStore(initialState = {}, history) {
 
   // Make reducers hot reloadable, see http://mxs.is/googmo
   /* istanbul ignore next */
-  if (module.hot) {
-    module.hot.accept('./reducers', () => {
-      store.replaceReducer(createReducer(store.injectedReducers));
-    });
-  }
+  // if (module.hot) {
+  //   module.hot.accept('./reducers', () => {
+  //     store.replaceReducer(createReducer(store.injectedReducers));
+  //   });
+  // }
 
   return store;
 }
+

@@ -9,6 +9,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 const env = dotenv.config().parsed;
+if (!env) {
+  throw new Error('No .env file found');
+}
+
 const envKeys = Object.keys(env).reduce((prev, next) => {
   // eslint-disable-next-line no-param-reassign
   prev[`process.env.${next}`] = JSON.stringify(env[next]);
