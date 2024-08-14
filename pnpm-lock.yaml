@@ -57,9 +57,6 @@ importers:
       compression:
         specifier: 1.7.4
         version: 1.7.4
-      cross-env:
-        specifier: 7.0.3
-        version: 7.0.3
       express:
         specifier: ^4.19.2
         version: 4.19.2
@@ -208,6 +205,9 @@ importers:
       coveralls:
         specifier: 3.1.1
         version: 3.1.1
+      cross-env:
+        specifier: 7.0.3
+        version: 7.0.3
       css-loader:
         specifier: 7.1.2
         version: 7.1.2(webpack@5.93.0(webpack-cli@5.1.4))
