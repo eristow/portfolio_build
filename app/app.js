@@ -5,9 +5,6 @@
  * code.
  */
 
-// Needed for redux-saga es6 generator support
-import '@babel/polyfill';
-
 // Import all the third party stuff
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -25,7 +22,8 @@ import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-import configureStore, { createReduxHistory } from './configureStore';
+import configureStore from './configureStore';
+import { createReduxHistory } from './history';
 
 // Import i18n messages
 

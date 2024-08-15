@@ -6,21 +6,29 @@ Built with Webpack, Babel.
 Hosted on GitHub Pages.
 
 ## TODO
+- [ ] Copy react code over to a new project built using vite
+
+- [ ] Remove redux and sagas (overkill)
+  - [ ] Do page redirects without redux
+
+- [ ] Fix up built-in apps
+  - [ ] Stocks
+  - [ ] Recipe
+  - [ ] TicTacToe
+
 - [ ] Get `pnpm predeploy` working
 
 - [ ] Test `pnpm deploy`
 
-- [ ] Remove `Loadable` and update container imports
-
-- [ ] Update links
-  - [ ] Resume
-  - [ ] LinkedIn
-  - [ ] Web DAW (disable) (re-host it?)
+- [ ] Get `pnpm lint` working
 
 - [ ] Improve styling
   - [ ] Use Tailwind CSS?
 
-- [ ] Fix up apps if they need it
 
 - [x] Update deprecated packages
 - [x] Get `pnpm start` working
+- [x] Update links
+  - [x] Resume
+  - [x] LinkedIn
+  - [x] Web DAW (disable) (re-host it?)

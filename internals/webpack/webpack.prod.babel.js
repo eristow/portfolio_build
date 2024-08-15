@@ -43,7 +43,7 @@ module.exports = require('./webpack.base.babel')({
           // cache: true,
           // sourceMap: true,
         }).apply(compiler);
-      }
+      },
     ],
     nodeEnv: 'production',
     sideEffects: true,
@@ -137,7 +137,6 @@ module.exports = require('./webpack.base.babel')({
         },
       ],
     }),
-
   ],
 
   performance: {

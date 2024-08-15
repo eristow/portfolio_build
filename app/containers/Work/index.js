@@ -23,86 +23,107 @@ const H2 = styled.h2`
   margin-bottom: 12px;
 `;
 
-export function Work() {
+function RenderRedirect(shouldRedirect, path) {
+  if (shouldRedirect) {
+    return <Redirect to={path} />;
+  }
+  return <p>{path}</p>;
+}
+
+export function Work(props) {
   const [goToStock, setGoToStock] = useState(false);
   // const [goToRadio, setGoToRadio] = useState(false);
   const [goToTicTacToe, setGoToTicTacToe] = useState(false);
   const [goToRecipe, setGoToRecipe] = useState(false);
 
+  function handleRedirect(path) {
+    console.log(props);
+    props.history.push(path);
+  }
+
   return (
+    // <div>
+    //   <h1>My Work</h1>
+    //   {goToStock && <Redirect to="stocks" />}
+    //   {/* {goToRadio && <Redirect to="radio" />} */}
+    //   {goToTicTacToe && <Redirect to="tictactoe" />}
+    //   {goToRecipe && <Redirect to="recipe" />}
+    //   <H2>Web DAW</H2>
+    //   <ButtonContainer>
+    //     <a href="https://web-daw-frontend.herokuapp.com/">
+    //       <Button type="button" margin="0px 10px 0px 0px">
+    //         <FaMusic /> Web DAW Site
+    //       </Button>
+    //     </a>
+    //     <a href="https://github.com/eristow/web-daw">
+    //       <Button type="button" margin="0px 10px">
+    //         Web DAW Front-End Code
+    //       </Button>
+    //     </a>
+    //     <a href="https://github.com/eristow/web-daw-backend">
+    //       <Button type="button" margin="0px 10px">
+    //         Web DAW Back-End Code
+    //       </Button>
+    //     </a>
+    //   </ButtonContainer>
+    //   <H2>Date Night Questions</H2>
+    //   <ButtonContainer>
+    //     <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
+    //       <Button type="button" margin="0px 10px 0px 0px">
+    //         <FaQuestion /> Date Night Site
+    //       </Button>
+    //     </a>
+    //     <a href="https://github.com/eristow/date-night-coding-challenge">
+    //       <Button type="button" margin="0px 10px">
+    //         Date Night Code
+    //       </Button>
+    //     </a>
+    //   </ButtonContainer>
+    //   <H2>Other</H2>
+    //   <ButtonContainer>
+    //     <a href="https://habbit-rabbit.netlify.app">
+    //       <Button type="button" margin="0px 10px 0px 0px">
+    //         <GiRabbit /> Habbit Rabbit
+    //       </Button>
+    //     </a>
+    //     <Button
+    //       type="button"
+    //       margin="0px 10px 0px 0px"
+    //       onClick={() => setGoToStock(true)}
+    //     >
+    //       <FaChartLine /> Stock App
+    //     </Button>
+    //     {/* <Button
+    //       type="button"
+    //       margin="10px 10px"
+    //       onClick={() => setGoToRadio(true)}
+    //     >
+    //       Radio (WIP)
+    //     </Button> */}
+    //     <Button
+    //       type="button"
+    //       margin="0px 10px"
+    //       onClick={() => setGoToRecipe(true)}
+    //     >
+    //       <ImSpoonKnife /> Recipe Calculator
+    //     </Button>
+    //     <Button
+    //       type="button"
+    //       margin="0px 10px"
+    //       onClick={() => setGoToTicTacToe(true)}
+    //     >
+    //       <ImCross /> TicTacToe <FaRegCircle />
+    //     </Button>
+    //   </ButtonContainer>
+    // </div>
     <div>
-      <h1>My Work</h1>
-      {goToStock && <Redirect to="stocks" />}
-      {/* {goToRadio && <Redirect to="radio" />} */}
-      {goToTicTacToe && <Redirect to="tictactoe" />}
-      {goToRecipe && <Redirect to="recipe" />}
-      <H2>Web DAW</H2>
-      <ButtonContainer>
-        <a href="https://web-daw-frontend.herokuapp.com/">
-          <Button type="button" margin="0px 10px 0px 0px">
-            <FaMusic /> Web DAW Site
-          </Button>
-        </a>
-        <a href="https://github.com/eristow/web-daw">
-          <Button type="button" margin="0px 10px">
-            Web DAW Front-End Code
-          </Button>
-        </a>
-        <a href="https://github.com/eristow/web-daw-backend">
-          <Button type="button" margin="0px 10px">
-            Web DAW Back-End Code
-          </Button>
-        </a>
-      </ButtonContainer>
-      <H2>Date Night Questions</H2>
-      <ButtonContainer>
-        <a href="https://master.d7vp4hauoyn5j.amplifyapp.com/">
-          <Button type="button" margin="0px 10px 0px 0px">
-            <FaQuestion /> Date Night Site
-          </Button>
-        </a>
-        <a href="https://github.com/eristow/date-night-coding-challenge">
-          <Button type="button" margin="0px 10px">
-            Date Night Code
-          </Button>
-        </a>
-      </ButtonContainer>
-      <H2>Other</H2>
-      <ButtonContainer>
-        <a href="https://habbit-rabbit.netlify.app">
-          <Button type="button" margin="0px 10px 0px 0px">
-            <GiRabbit /> Habbit Rabbit
-          </Button>
-        </a>
-        <Button
-          type="button"
-          margin="0px 10px 0px 0px"
-          onClick={() => setGoToStock(true)}
-        >
-          <FaChartLine /> Stock App
-        </Button>
-        {/* <Button
-          type="button"
-          margin="10px 10px"
-          onClick={() => setGoToRadio(true)}
-        >
-          Radio (WIP)
-        </Button> */}
-        <Button
-          type="button"
-          margin="0px 10px"
-          onClick={() => setGoToRecipe(true)}
-        >
-          <ImSpoonKnife /> Recipe Calculator
-        </Button>
-        <Button
-          type="button"
-          margin="0px 10px"
-          onClick={() => setGoToTicTacToe(true)}
-        >
-          <ImCross /> TicTacToe <FaRegCircle />
-        </Button>
-      </ButtonContainer>
+      <Button
+        type="button"
+        margin="0px 10px 0px 0px"
+        onClick={() => handleRedirect("stocks")}
+      >
+        <FaChartLine /> Stock App
+      </Button>
     </div>
   );
 }
@@ -111,6 +132,12 @@ Work.propTypes = {
   // dispatch: PropTypes.func.isRequired,
 };
 
+function mapStateToProps(state) {
+  return {
+    // stocks: state.stocks,
+  };
+}
+
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
@@ -118,7 +145,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
 );
 

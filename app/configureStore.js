@@ -4,28 +4,8 @@
 
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import { combineReducers } from 'redux';
-import { createReduxHistoryContext } from "redux-first-history";
-import { createBrowserHistory } from 'history';
-
-/**
- * Merges the main reducer with the router state and dynamically injected reducers
- */
-const { createReduxHistory, routerMiddleware, routerReducer } = createReduxHistoryContext({
-  history: createBrowserHistory(),
-  //other options if needed
-});
-
-export { createReduxHistory };
-
-export function createReducer(injectedReducers = {}) {
-  const rootReducer = combineReducers({
-    router: routerReducer,
-    ...injectedReducers,
-  });
-
-  return rootReducer;
-}
+import { routerMiddleware } from './history';
+import createReducer from './reducers';
 
 export default function configureStore(initialState = {}, history) {
   let composeEnhancers = compose;

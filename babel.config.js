@@ -4,13 +4,15 @@ module.exports = {
       '@babel/preset-env',
       {
         modules: false,
+        useBuiltIns: 'usage',
+        corejs: 3,
       },
     ],
     '@babel/preset-react',
   ],
   plugins: [
     'styled-components',
-    '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-transform-class-properties',
     '@babel/plugin-syntax-dynamic-import',
   ],
   env: {
